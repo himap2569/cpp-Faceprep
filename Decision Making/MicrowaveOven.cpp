@@ -34,13 +34,18 @@ int main()
   float t;
   std::cin>>n;
   std::cin>>t;
-  
+  if(n==1){
+    std::cout<<t;
+  }
   if(n==2){
     std::cout<<(t+(0.5*t));
     
   }
-  else{
+  if(n==3){
     std::cout<<(t*2);
   }
-  
+ if(n>3){
+   std::cout<<"Number of items is more";
+ }
+  return 0;
 }
