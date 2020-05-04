@@ -44,7 +44,10 @@ int main()
   sum=sun+mon+tue+wed+thurs+fri;
   if(sun>0){
     sal=100*sun;
-    sal+=0.5*(100*sun);    
+    sal+=0.5*(100*sun);  
+    if(sun>8){
+      sal+=(sun-8)*15;
+    }
   }
   if(mon>0){
     sal+=100*mon;
@@ -75,14 +78,18 @@ int main()
     if(fri>8){
       sal+=(fri-8)*15;
     }
+    
   }
  
   if(sat>0){
     sal+=100*sat;
     sal+=(0.25)*(100*sat);
+    if(sat>8){
+      sal+=(sat-8)*15;
+    }
   }
   
-  if(sum>40){
+  if((sum-sun-sat)>40){
     sal+=(sum-40)*(25);
   }
 
