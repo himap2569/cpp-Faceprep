@@ -34,16 +34,14 @@ The number of turns is 3
 using namespace std;
 int main()
 {
-  int n,a,i=0,c=0,s=0;
+  int n,a,c=0,s=0;
     std::cin>>n;
-    do
-    {
+    while(s<n){
         c++;
         std::cin>>a;
         s+=a;
-        i++;
     }
-    while(s<n);
+
     std::cout<<"The number of turns is "<<c;
     return 0;
 }
