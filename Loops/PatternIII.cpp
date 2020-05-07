@@ -27,8 +27,7 @@ int main(){
       std::cout<<i<<"*";}
     std::cout<<i<<"\n";
   }
-  int i=4;
-  int j=4;
+  
    for(int i=n;i>=1;i--){
     for(int j=i-1;j>=1;j--){
       std::cout<<i<<"*";}
