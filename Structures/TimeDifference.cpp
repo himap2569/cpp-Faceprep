@@ -42,9 +42,6 @@ int main()
     s1.min+=60;
     s2.hr+=1;}
    res.min=s1.min-s2.min;
-   if(s1.hr<s2.hr){
-    s1.hr+=60;
-  }
    res.hr=s1.hr-s2.hr;
   std::cout<<res.hr<<":"<<res.min<<":"<<res.sec;
 }
